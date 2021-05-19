@@ -31,17 +31,17 @@ elif randNo == 2:
     comp = 'w'
 elif randNo == 3:
     comp = 'g'
+while True:
+ you = input("your turn : Snake(S) Water(w) Gun(g)?")
+ a = gamewin(comp, you)
 
-you = input("your turn : Snake(S) Water(w) Gun(g)?")
-a = gamewin(comp, you)
+ print(f"computer chose {comp}")
+ print(f"your chose {you}")
 
-print(f"computer chose {comp}")
-print(f"your chose {you}")
-
-if a == None:
+ if a == None:
     print("The game is a tie!")
-elif a:
+ elif a:
     print("You win!")
-else:
+ else:
     print("You lose!")
 
